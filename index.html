@@ -225,8 +225,13 @@ img.one:hover {
 <div class="w3-content w3-section" style="max-width:800px">
   <img src="ryanandmason1.jpg" alt="Avatar" width="302.4" height="403.2" class="mySlides">
   <img src="ryanandmason2.jpg" alt="Avatar" width="302.4" height="403.2" class="mySlides">
+  <img src="ryanandmason3.jpg" alt="Avatar" width="302.4" height="403.2" class="mySlides">
+  <img src="ryanandmason4.jpg" alt="Avatar" width="302.4" height="403.2" class="mySlides">
+  <img src="ryanandmason5.jpg" alt="Avatar" width="302.4" height="403.2" class="mySlides">
 </div>
 </div>
+
+
 
 <script>
 var myIndex = 0;
@@ -241,9 +246,10 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2000); // Change image every 2 seconds
+  setTimeout(carousel, 3000); // Change image every 3 seconds
 }
 </script>
+
 
 <!--
 // Count Down Date
