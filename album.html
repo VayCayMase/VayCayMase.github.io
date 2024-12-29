@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, maximum-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>Tester</title>
+<style>
+body {
+ background: url("6934f9c19b2d1e47d7a2aca6f692bf16.jpg");
+  background-size: 1920px 2880px;
+  font-family: Courier New, monospace;
+  padding: 50px;
+}
+<!-- example1 {
+  border: 2px solid black;
+  padding: 25px;
+  background: url("image/6934f9c19b2d1e47d7a2aca6f692bf16.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+#example2 {
+  border: 2px solid black;
+  padding: 25px;
+  background: url("image/6934f9c19b2d1e47d7a2aca6f692bf16.jpg");
+  background-repeat: no-repeat;
+  background-size: 300px 100px;
+} -->
+#corners {
+  border-radius: 25px;
+  background: #ffffff;
+  opacity: 0.5;
+  padding: 10px;   
+  margin: auto;
+ }
+ 
+ h1 {
+  text-align: center;
+  font-size: 30px;
+  border-radius: 30px;
+  background: #ffffff;
+  opacity: 0.5;
+  padding: 15px; 
+  width: 300px;
+  height: 35px;  
+  margin: auto;
+  }
+ h2 {
+  text-align: center;
+  font-size: 35px;
+  border-radius: 30px;
+  opacity: 0.65;
+  padding: 25px; 
+  margin: auto;
+  font-family: Snell Roundhand, cursive;
+  }
+  h3 {
+  font-size: 20px;
+  opacity: 0.65;
+   margin: auto;
+   padding-top: 15px;
+  
+  }
+  img.one {
+  border-style: solid; 
+  border-width: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+img.one:hover {
+  opacity: 50%;
+  }
+ 
+ 
+.mySlides {
+  border-style: solid; 
+  border-width: 10px;
+  margin-left: 0px;
+  margin-top: 50px;
+  display: block;
+}
+ 
+ 
+ .container {
+  position: relative;
+  margin-top: 10px;
+  padding-right: 50px;
+}
+
+.image {
+  border-style: solid; 
+  border-width: 10px;
+  display: block;
+  margin-top: 20px;
+}
+
+.overlay {
+  margin: auto;
+   display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  padding: 0px;
+  height: 504px;
+  width: 378px;
+  transition: .5s ease;
+  background-color: #FFFFFF;
+}
+
+.container:hover .overlay {
+  opacity: 65%;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+ 
+ #unfloated-container{
+    width: 1000px;
+}
+
+<!-- Dropdown -->
+
+
+
+/* Please ? this if you like it! */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 1.4;
+	color: #fff;
+	background-color: #1f2029;
+	overflow-x: hidden;
+  <!-- background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+  background-position: center; -->
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 70px;
+  padding-bottom: 200px;
+}
+.sec-center {
+  position: relative;
+  max-width: 100%;
+  text-align: center;
+  z-index: 200;
+}
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked){
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  pointer-events: none;
+}
+.dark-light:checked + label,
+.dark-light:not(:checked) + label{
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  z-index: 20000;
+  display: block;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  transition: all 200ms linear;
+  box-shadow: 0 0 25px rgba(255,235,167,.45);
+}
+.dark-light:checked + label{
+  transform: rotate(360deg);
+}
+.dark-light:checked + label:after,
+.dark-light:not(:checked) + label:after{
+  position: absolute;
+  content: '';
+  top: 1px;
+  left: 1px;
+  overflow: hidden;
+  z-index: 2;
+  display: block;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: #102770;
+  background-image: url('https://assets.codepen.io/1462889/moon.svg');
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 200ms linear;
+  opacity: 0;
+}
+.dark-light:checked + label:after {
+  opacity: 1;
+}
+.dark-light:checked + label:before,
+.dark-light:not(:checked) + label:before{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+  display: block;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  background-color: #48dbfb;
+  background-image: url('https://assets.codepen.io/1462889/sun.svg');
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 200ms linear;
+}
+.dark-light:checked + label:before{
+  background-color: #000;
+}
+.light-back{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #fff;
+  overflow: hidden;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 4%;
+  height: 100%;
+  width: 100%;
+  transition: all 200ms linear;
+  opacity: 0;
+}
+.dark-light:checked ~ .light-back{
+  opacity: 1;
+}
+.dropdown:checked + label,
+.dropdown:not(:checked) + label{
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 2;
+  height: 50px;
+  transition: all 200ms linear;
+  border-radius: 4px;
+  width: 220px;
+  letter-spacing: 1px;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  text-align: center;
+  border: none;
+  background-color: #ffeba7;
+  cursor: pointer;
+  color: #102770;
+  box-shadow: 0 12px 35px 0 rgba(255,235,167,.15);
+}
+.dark-light:checked ~ .sec-center .for-dropdown{
+  background-color: #102770;
+  color: #ffeba7;
+  box-shadow: 0 12px 35px 0 rgba(16,39,112,.25);
+}
+.dropdown:checked + label:before,
+.dropdown:not(:checked) + label:before{
+  position: fixed;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  cursor: auto;
+  pointer-events: none;
+}
+.dropdown:checked + label:before{
+  pointer-events: auto;
+}
+.dropdown:not(:checked) + label .uil {
+  font-size: 24px;
+  margin-left: 10px;
+  transition: transform 200ms linear;
+}
+.dropdown:checked + label .uil {
+  transform: rotate(180deg);
+  font-size: 24px;
+  margin-left: 10px;
+  transition: transform 200ms linear;
+}
+.section-dropdown {
+  position: absolute;
+  padding: 5px;
+  background-color: #111;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+  box-shadow: 0 14px 35px 0 rgba(9,9,12,0.4);
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: all 200ms linear;
+}
+.dark-light:checked ~ .sec-center .section-dropdown {
+  background-color: #fff;
+  box-shadow: 0 14px 35px 0 rgba(9,9,12,0.15);
+}
+.dropdown:checked ~ .section-dropdown{
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+.section-dropdown:before {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  content: '';
+  display: block;
+  z-index: 1;
+}
+.section-dropdown:after {
+  position: absolute;
+  top: -7px;
+  left: 30px;
+  width: 0; 
+  height: 0; 
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent; 
+  border-bottom: 8px solid #111;
+  content: '';
+  display: block;
+  z-index: 2;
+  transition: all 200ms linear;
+}
+.dark-light:checked ~ .sec-center .section-dropdown:after {
+  border-bottom: 8px solid #fff;
+}
+
+a {
+  position: relative;
+  color: #fff;
+  transition: all 200ms linear;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 2px;
+  padding: 5px 0;
+  padding-left: 20px;
+  padding-right: 15px;
+  margin: 2px 0;
+  text-align: left;
+  text-decoration: none;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: space-between;
+    -ms-flex-pack: distribute;
+}
+.dark-light:checked ~ .sec-center .section-dropdown a {
+  color: #102770;
+}
+a:hover {
+  color: #102770;
+  background-color: #ffeba7;
+}
+.dark-light:checked ~ .sec-center .section-dropdown a:hover {
+  color: #ffeba7;
+  background-color: #102770;
+}
+a .uil {
+  font-size: 22px;
+}
+.dropdown-sub:checked + label,
+.dropdown-sub:not(:checked) + label{
+  position: relative;
+  color: #fff;
+  transition: all 200ms linear;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 2px;
+  padding: 5px 0;
+  padding-left: 20px;
+  padding-right: 15px;
+  text-align: left;
+  text-decoration: none;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: space-between;
+    -ms-flex-pack: distribute;
+    cursor: pointer;
+}
+.dropdown-sub:checked + label .uil,
+.dropdown-sub:not(:checked) + label .uil{
+  font-size: 22px;
+}
+.dropdown-sub:not(:checked) + label .uil {
+  transition: transform 200ms linear;
+}
+.dropdown-sub:checked + label .uil {
+  transform: rotate(135deg);
+  transition: transform 200ms linear;
+}
+.dropdown-sub:checked + label:hover,
+.dropdown-sub:not(:checked) + label:hover{
+  color: #102770;
+  background-color: #ffeba7;
+}
+.dark-light:checked ~ .sec-center .section-dropdown .for-dropdown-sub{
+  color: #102770;
+}
+.dark-light:checked ~ .sec-center .section-dropdown .for-dropdown-sub:hover{
+  color: #ffeba7;
+  background-color: #102770;
+}
+
+.section-dropdown-sub {
+  position: relative;
+  display: block;
+  width: 100%;
+  pointer-events: none;
+  opacity: 0;
+  max-height: 0;
+  padding-left: 10px;
+  padding-right: 3px;
+  overflow: hidden;
+  transition: all 200ms linear;
+}
+.dropdown-sub:checked ~ .section-dropdown-sub{
+  pointer-events: auto;
+  opacity: 1;
+  max-height: 999px;
+}
+.section-dropdown-sub a {
+  font-size: 14px;
+}
+.section-dropdown-sub a .uil {
+  font-size: 20px;
+}
+.logo {
+	position: fixed;
+	top: 50px;
+	left: 40px;
+	display: block;
+	z-index: 11000000;
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0;
+	transition: all 250ms linear;
+}
+.logo:hover {
+  background-color: transparent;
+}
+.logo img {
+	height: 26px;
+	width: auto;
+	display: block;
+  transition: all 200ms linear;
+}
+.dark-light:checked ~ .logo img{
+  filter: brightness(10%);
+}
+
+@media screen and (max-width: 991px) {
+.logo {
+	top: 30px;
+	left: 20px;
+}
+.dark-light:checked + label,
+.dark-light:not(:checked) + label{
+  top: 20px;
+  right: 20px;
+}
+}
+
+</style>
+</head>
+<body>
+ <!--
+
+<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+  </div>
+</div>
+-->
+<!-- Navigation tab --> 
+<!--
+  	<input class="dark-light" type="checkbox" id="dark-light" name="dark-light"/>
+  	<label for="dark-light"></label>
+
+  	<div class="light-back"></div> 
+-->
+	<a href="https://front.codes/" class="logo" target="_blank">
+		<!-- <img src="https://assets.codepen.io/1462889/fcy.png" alt=""> -->
+	</a>
+
+  	<div class="sec-center" style="padding: 30px;"> 	
+	  	<input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
+	  	<label class="for-dropdown" for="dropdown">Menu <i class="uil uil-arrow-down"></i></label>
+  		<div class="section-dropdown"> 
+			<!--
+  			<a href="index.html">Main page<i class="uil uil-arrow-right"></i></a>
+		  	<input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub"/>
+		  	<label class="for-dropdown-sub" for="dropdown-sub">Album <i class="uil uil-plus"></i></label>
+	  		<div class="section-dropdown-sub"> 
+	  			<a href="#">? <i class="uil uil-arrow-right"></i></a>
+	  			<a href="#">? <i class="uil uil-arrow-right"></i></a>
+	  		</div>
+			-->
+  			<a href="index.html">Main Page<i class="uil uil-arrow-right"></i></a>
+  			<a href="album.html">Album <i class="uil uil-arrow-right"></i></a>
+  		</div>
+  	</div>
+<!-- 
+
+// DAY 1
+
+<h3> A little message to make your day</h3>
+<h3>Something we need to end our stay</h3>
+<h3>Something cute. It's something small</h3>
+<h3>Could make you flourish or even bawl</h3>
+<h3>Take this note and hold it close</h3>
+<h3>Come back tomorrow for another post!</h3>
+
+-->
+<!-- DAY 2 -->
+
+ <!-- <h3> I saw that you were perfect, and so I loved you. Then I saw that you were not perfect and I loved you even more. </h3> -->
+ <!-- DAY 3 -->
+ <h3> Here is a current slide show to show all the pictures we have taken together :) Enjoy! </h3>
+ 
+<!-- Image 1 --> 
+  <!-- <img src="ryanandmason1.jpg" alt="Avatar" width="302.4" height="403.2" class="image"> -->
+  <!-- <img src="ryanandmason2.jpg" alt="Avatar" width="248.4" height="441.6" class="image"> -->
+  <!--
+  <div class="overlay">
+    <div class="text"></div>
+  </div>
+  -->
+  
+<!-- Slideshow -->
+
+<div class="container">
+<div class="w3-content w3-section" style="max-width:800px">
+  <img src="ryanandmason1.jpg" alt="Avatar" width="302.4" height="403.2" class="mySlides">
+  <img src="ryanandmason2.jpg" alt="Avatar" width="302.4" height="403.2" class="mySlides">
+  <img src="ryanandmason3.jpg" alt="Avatar" width="302.4" height="403.2" class="mySlides">
+  <img src="ryanandmason4.jpg" alt="Avatar" width="302.4" height="403.2" class="mySlides">
+  <img src="ryanandmason5.jpg" alt="Avatar" width="302.4" height="403.2" class="mySlides">
+  <img src="ryanandmason6.jpg" alt="Avatar" width="302.4" height="403.2" class="mySlides">
+  <img src="ryanandmason7.jpg" alt="Avatar" width="302.4" height="403.2" class="mySlides">
+</div>
+</div>
+
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000); // Change image every 3 seconds
+}
+</script>
+
+
+
+<!-- Count Down Date 
+
+<h1 id="demo"></h1>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 16, 2025 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+ 
+-->
+
+<!-- <iframe width="420" height="345" src="https://www.youtube.com/watch?v=-BjZmE2gtdo">
+</iframe>
+-->
+</body>
+</html>
